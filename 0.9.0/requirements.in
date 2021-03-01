@@ -1,0 +1,6 @@
+mkdocs-material
+mkdocstrings-crystal
+mkdocs-gen-files
+mkdocs-literate-nav
+mkdocs-section-index
+git+https://github.com/jimporter/mike.git@1f0f7704a30012af3248ed1fbf49dfac6b4aab87

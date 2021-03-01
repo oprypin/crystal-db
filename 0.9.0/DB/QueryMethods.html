@@ -1294,6 +1294,7 @@ to be called directly.</p>
   <div class="doc doc-contents ">
 <p>Performs the <a href="#DB::QueryMethods#query(query,*,args)"><code>query</code></a> and returns an <a href="ExecResult.html#DB::ExecResult"><code>ExecResult</code></a></p>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L274">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1317,6 +1318,7 @@ The <a href="ResultSet.html#DB::ResultSet"><code>ResultSet</code></a> must be cl
 <div class="highlight"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">query</span> <span class="s2">&quot;select name from contacts where id = ?&quot;</span><span class="p">,</span> <span class="ss">args</span><span class="p">:</span> <span class="o">[</span><span class="mi">10</span><span class="o">]</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L45">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1334,6 +1336,7 @@ The <a href="ResultSet.html#DB::ResultSet"><code>ResultSet</code></a> is closed 
 <span class="k">end</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L59">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1347,6 +1350,7 @@ value of each row is read as the given <em>type</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">names</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">query_all</span> <span class="s2">&quot;select name from contacts&quot;</span><span class="p">,</span> <span class="ss">as</span><span class="p">:</span> <span class="n">String</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L251">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1361,6 +1365,7 @@ are not necessarily the column names).</p>
 <div class="highlight"><pre><span></span><code><span class="n">contacts</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">query_all</span> <span class="s2">&quot;select name, age from contacts&quot;</span><span class="p">,</span> <span class="ss">as</span><span class="p">:</span> <span class="p">{</span><span class="ss">name</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="ss">age</span><span class="p">:</span> <span class="n">Int32</span><span class="p">}</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L239">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1374,6 +1379,7 @@ of each row, returning an array of the values of the blocks.</p>
 <div class="highlight"><pre><span></span><code><span class="n">names</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">query_all</span> <span class="s2">&quot;select name from contacts&quot;</span><span class="p">,</span> <span class="o">&amp;.</span><span class="n">read</span><span class="p">(</span><span class="n">String</span><span class="p">)</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L212">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1387,6 +1393,7 @@ read as a tuple of the given <em>types</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">contacts</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">query_all</span> <span class="s2">&quot;select name, age from contacts&quot;</span><span class="p">,</span> <span class="ss">as</span><span class="p">:</span> <span class="p">{</span><span class="n">String</span><span class="p">,</span> <span class="n">Int32</span><span class="p">}</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L226">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1402,6 +1409,7 @@ The <a href="ResultSet.html#DB::ResultSet"><code>ResultSet</code></a> is closed 
 <span class="k">end</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L265">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1418,6 +1426,7 @@ Raises <a href="Error.html#DB::Error"><code>DB::Error</code></a> if there were m
 <div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">query_one</span> <span class="s2">&quot;select name from contacts where id = ?&quot;</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="o">&amp;.</span><span class="n">read</span><span class="p">(</span><span class="n">String</span><span class="p">)</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L76">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1433,6 +1442,7 @@ Raises <a href="Error.html#DB::Error"><code>DB::Error</code></a> if there were m
 <div class="highlight"><pre><span></span><code><span class="n">db</span><span class="o">.</span><span class="n">query_one</span> <span class="s2">&quot;select name, age from contacts where id = ?&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="ss">as</span><span class="p">:</span> <span class="p">{</span><span class="n">String</span><span class="p">,</span> <span class="n">Int32</span><span class="p">}</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L95">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1449,6 +1459,7 @@ Raises <a href="Error.html#DB::Error"><code>DB::Error</code></a> if there were m
 <div class="highlight"><pre><span></span><code><span class="n">db</span><span class="o">.</span><span class="n">query_one</span> <span class="s2">&quot;select name, age from contacts where id = ?&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="ss">as</span><span class="p">:</span> <span class="p">{</span><span class="ss">name</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="ss">age</span><span class="p">:</span> <span class="n">Int32</span><span class="p">}</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L111">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1464,6 +1475,7 @@ Raises <a href="Error.html#DB::Error"><code>DB::Error</code></a> if there were m
 <div class="highlight"><pre><span></span><code><span class="n">db</span><span class="o">.</span><span class="n">query_one</span> <span class="s2">&quot;select name from contacts where id = ?&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="ss">as</span><span class="p">:</span> <span class="n">String</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L126">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1480,6 +1492,7 @@ and returns the first column's value as the given <em>type</em>.</p>
 <span class="kp">typeof</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="c1"># =&gt; String?</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L200">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1497,6 +1510,7 @@ are not necessarily the column names).</p>
 <span class="kp">typeof</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="c1"># =&gt; NamedTuple(age: String, name: Int32) | Nil</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L183">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1513,6 +1527,7 @@ as a tuple of the given <em>types</em>.</p>
 <span class="kp">typeof</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="c1"># =&gt; Tuple(String, Int32) | Nil</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L165">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1530,6 +1545,7 @@ positioned at that first row.</p>
 <span class="kp">typeof</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="c1"># =&gt; String | Nil</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L144">View source</a>
 </div>
 
 <div class="doc doc-object doc-method doc-instance_method">
@@ -1542,6 +1558,7 @@ positioned at that first row.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">puts</span> <span class="n">db</span><span class="o">.</span><span class="n">scalar</span><span class="p">(</span><span class="s2">&quot;SELECT MAX(name)&quot;</span><span class="p">)</span><span class="kp">.as</span><span class="p">(</span><span class="n">String</span><span class="p">)</span> <span class="c1"># =&gt; (a String)</span>
 </code></pre></div>  </div>
 
+    <a class="doc-source-link" href="https://github.com/crystal-lang/crystal-db/blob/b4fd5e8fa0c996bd094c1e4f0e2cb484b3473be7/src/db/query_methods.cr#L283">View source</a>
 </div>      </div>
   </div>
 
