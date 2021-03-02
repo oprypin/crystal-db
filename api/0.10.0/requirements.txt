@@ -38,7 +38,7 @@ markupsafe==1.1.1
     #   jinja2
     #   mkdocstrings
     #   mkdocstrings-crystal
-git+https://github.com/jimporter/mike.git@ee303efdad2da555159a1596ba0903c4f0b1e928
+git+https://github.com/jimporter/mike.git@b24149e271255e31c9e1b1595cd3a350876a7d7c
     # via -r requirements.in
 mkdocs-autorefs==0.1.1
     # via mkdocstrings
