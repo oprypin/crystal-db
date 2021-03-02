@@ -1312,10 +1312,12 @@ on individual instance variables.</p>
   <span class="bp">property</span> <span class="n">name</span> <span class="p">:</span> <span class="n">String?</span>
 <span class="k">end</span>
 </code></pre></div>
-<p><a href="Field.html#DB::Field"><code>DB::Field</code></a> properties:
-* <strong>ignore</strong>: if <code>true</code>, skip this field in serialization and deserialization (<code>false</code> by default)
-* <strong>key</strong>: defines which column to read from a <a href="ResultSet.html#DB::ResultSet"><code>ResultSet</code></a> (name of the instance variable by default)
-* <strong>converter</strong>: defines an alternate type for parsing results. The given type must define <code>#from_rs(DB::ResultSet)</code> and return an instance of the included type.</p>
+<p><a href="Field.html#DB::Field"><code>DB::Field</code></a> properties:</p>
+<ul>
+<li><strong>ignore</strong>: if <code>true</code>, skip this field in serialization and deserialization (<code>false</code> by default)</li>
+<li><strong>key</strong>: defines which column to read from a <a href="ResultSet.html#DB::ResultSet"><code>ResultSet</code></a> (name of the instance variable by default)</li>
+<li><strong>converter</strong>: defines an alternate type for parsing results. The given type must define <code>#from_rs(DB::ResultSet)</code> and return an instance of the included type.</li>
+</ul>
 <h4 id="DB::Serializable--dbserializablenonstrict"><a href="Serializable/NonStrict.html#DB::Serializable::NonStrict"><code>DB::Serializable::NonStrict</code></a><a class="headerlink" href="#DB::Serializable--dbserializablenonstrict" title="Permanent link">#</a></h4>
 <p>Including this module is functionally identical to passing <code>{strict: false}</code> to <a href="../DB.html#DB:mapping(properties,strict)"><code>DB.mapping</code></a>: extra columns will not raise.</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Employee</span>
@@ -1343,7 +1345,7 @@ on individual instance variables.</p>
   <div class="doc doc-contents ">
   </div>
 
-    <a class="doc-source-link" href="https://github.com/oprypin/crystal-db/blob/v0.10.0/src/db/serializable.cr#L104">View source</a>
+    <a class="doc-source-link" href="https://github.com/oprypin/crystal-db/blob/v0.10.0/src/db/serializable.cr#L105">View source</a>
 </div>      </div>
   </div>
 
